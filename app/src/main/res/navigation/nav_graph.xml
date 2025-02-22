@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.librariumdungeonis.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <!-- Acción original para ir al MenuFragment -->
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+
+        <!-- Acción NUEVA para ir directamente al CatalogFragment -->
+        <action
+            android:id="@+id/action_loginFragment_to_catalogFragment"
+            app:destination="@id/catalogFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.librariumdungeonis.ui.menu.MenuFragment"
+        android:label="Menú"
+        tools:layout="@layout/fragment_menu">
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue="Aventurero" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.example.librariumdungeonis.ui.catalog.CatalogFragment"
+        android:label="Catálogo"
+        tools:layout="@layout/fragment_catalog">
+
+        <!-- Acción para navegar a DetailItemFragment -->
+        <action
+            android:id="@+id/action_catalogFragment_to_detailItemFragment"
+            app:destination="@id/detailItemFragment">
+            <argument
+                android:name="itemId"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailItemFragment"
+        android:name="com.example.librariumdungeonis.ui.details.DetailItemFragment"
+        android:label="Detalle del Ítem">
+        <argument
+            android:name="itemId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.librariumdungeonis.ui.favorites.FavoritesFragment"
+        android:label="Favoritos"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.librariumdungeonis.ui.settings.SettingsFragment"
+        android:label="Ajustes"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

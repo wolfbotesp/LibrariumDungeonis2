@@ -1,0 +1,79 @@
+<resources>
+    <!-- Nombre de la app -->
+    <string name="app_name">Librarium Dungeonis</string>
+
+    <!-- Menú (navbar) -->
+    <string name="menu_catalog">Catálogo</string>
+    <string name="menu_favorites">Favoritos</string>
+    <string name="menu_settings">Ajustes</string>
+
+    <!-- Ajustes -->
+    <string name="username_label">Usuario:</string>
+    <string name="favorites_label">Favoritos:</string>
+    <string name="dark_mode_label">Modo Oscuro</string>
+
+    <!-- Mensajes emergentes de favoritos -->
+    <string name="added_to_favorites">%1$s añadido a Favoritos</string>
+    <string name="removed_from_favorites">%1$s eliminado de Favoritos</string>
+
+    <!-- Clases: IDs, nombres y descripciones -->
+    <string name="barbaro_id">barbaro</string>
+    <string name="barbaro_name">Bárbaro</string>
+    <string name="barbaro_desc">Clase no-mágica, con muchos PG y bastante CA, enfocado en daño cercano físico.</string>
+    <string name="barbaro_long_desc">Los bárbaros son personajes dedicados a la fuerza bruta y extrema.\nTienen una habilidad llamada "Frenesí", donde se dejan llevar por su ira y pueden añadirse diferentes bonificadores y beneficios. Este rasgo se recupera cada descanso largo que van haciendo, ganando de nuevo todos los usos que les viene determinados por su nivel de bárbaro.\nSuelen verse sin armaduras, y con armas grandes y pesadas como hachas de dos manos o mandobles.</string>
+
+    <string name="bardo_id">bardo</string>
+    <string name="bardo_name">Bardo</string>
+    <string name="bardo_desc">Clase mágica que ofrece apoyo a sus aliados y con mucho carisma.</string>
+    <string name="bardo_long_desc">Los bardos son criaturas que han desarrollado sus capacidades sociales a niveles insospechados. Son personas con un alto potencial carismático, pudiendo llegar a conocerte muy bien con pocas frases.\nLos bardos, además, lanzan conjuros, utilizando instrumentos musicales para exteriorizar su energía mágica.\nAunque normalmente no suelen hacer un gran daño, siempre están dispuestos a dialogar o, en caso contrario, ayudar a sus aliados en las batallas.</string>
+
+    <string name="brujo_id">brujo</string>
+    <string name="brujo_name">Brujo</string>
+    <string name="brujo_desc">Clase mágica de alto daño con pocos conjuros, enfocado en el ahorro de recursos.</string>
+    <string name="brujo_long_desc">Los brujos son seres que han hecho pactos con entidades de gran poder para conseguir habilidades mágicas o sobrenaturales. Estas entidades son los "Patrones sobrenaturales", que además les otorgan habilidades por su pacto.\nTienen una gran selección de habilidades para mejorar sus trucos, aunque escasean en cuanto a espacios de conjuro se refiere, teniendo dos o tres, pero recuperándolos cada descanso corto.\nLos brujos son muy frágiles, pero ejecutarán un daño bestial en los combates con "Descarga sobrenatural" o un poderoso "Bola de Fuego" de nivel 6.</string>
+
+    <string name="clerigo_id">clerigo</string>
+    <string name="clerigo_name">Clérigo</string>
+    <string name="clerigo_desc">Clase mágica, principalmente de apoyo, con una CA elevada y relacionada con los dioses.</string>
+    <string name="clerigo_long_desc">Los clérigos son personas que se han dedicado a vivir adorando a una deidad que le ha otorgado ciertos poderes. Si bien no suelen ser criaturas agresivas, ni destinadas a combatir, pueden otorgar mucha ayuda a sus aliados.\nPor lo general, suelen ser bondadosos con aquellos a su alrededor, pero no tiene que ser cierto esto último.</string>
+
+    <string name="druida_id">druida</string>
+    <string name="druida_name">Druida</string>
+    <string name="druida_desc">Clase mágica, capaz de convertirse en criaturas y bestias.</string>
+    <string name="druida_long_desc">Los druidas son aquellos que sienten una cercanía y una conexión profunda con las creaciones de la naturaleza, así como la fauna y la flora.\nTienen la capacidad de, entre otras cosas, convertirse en determinadas criaturas para adoptar sus habilidades.\nNo hacen un daño excepcional, pero aguantan muy bien debido a que al abandonar su "Forma salvaje" no han perdido puntos de golpe de su forma real.</string>
+
+    <string name="explorador_id">explorador</string>
+    <string name="explorador_name">Explorador</string>
+    <string name="explorador_desc">Clase principalmente no-mágica, relacionada con el conocimiento de la naturaleza.</string>
+    <string name="explorador_long_desc">Los exploradores son personas que han vivido fuera de la civilización durante un tiempo, o que tienen mucho conocimiento de lo que es vivir fuera de ella.\nSi bien no son extremadamente resistentes o poderosos, pueden usar conjuros para ayudar a gastar menos recursos alimenticios o poder pasar por zonas de difícil acceso, como zonas encharcadas o embarradas que podrían obstaculizar el paso.\nSon unos grandes apoyos en los combates, ya que pueden jugar con conjuros como "Enmarañar" para quitarle movimiento a los enemigos.</string>
+
+    <string name="guerrero_id">guerrero</string>
+    <string name="guerrero_name">Guerrero</string>
+    <string name="guerrero_desc">Clase no-mágica enfocada en un daño elevado y el apoyo a aliados.</string>
+    <string name="guerrero_long_desc">Los guerreros son aquellos que han vivido entrenando. Suelen ser personas fuertes, diestras o hábiles incluso, versadas en el noble arte del combate cuerpo a cuerpo o a distancia.\nTienen una Clase de Armadura elevada gracias a sus opciones de armadura, y una cantidad más que decente de Puntos de Golpe gracias a sus Dados de Golpe.\nPueden actuar de muchas formas; tanque en caso de ser necesario, efectuadores de cantidades decentes de daño o como apoyo al equipo gracias a sus habilidades y las maniobras.</string>
+
+    <string name="hechicero_id">hechicero</string>
+    <string name="hechicero_name">Hechicero</string>
+    <string name="hechicero_desc">Clase mágica muy versátil, que puede modificar los conjuros con sus habilidades.</string>
+    <string name="hechicero_long_desc">Los hechiceros son magos que han obtenido su magia por su linaje ancestral. Tienen un don tan excelente a la hora de obtener sus poderes que son capaces de moldear la magia como si fuera una parte más de su cuerpo.\nSon criaturas que pueden apoyar o hacer un gran daño, aunque no aguantan mucho, y pueden usar sus magias de formas muy innovadoras o curiosas gracias a los "Puntos de hechicería".</string>
+
+    <string name="mago_id">mago</string>
+    <string name="mago_name">Mago</string>
+    <string name="mago_desc">Clase mágica dedicada a una escuela y a tener un gran repertorio de conjuros.</string>
+    <string name="mago_long_desc">Los magos son personas que para poder aprender a lanzar conjuros han tenido que estudiar durante largos periodos de tiempo para ello. No han hecho ningún pacto ni trato con nadie, ni tienen dones especiales, sino que han tenido que trabajar en ello.\nTienen un gran repertorio de conjuros y, por ello, pueden actuar de muchos roles de atacante o apoyo diferentes, y puede aumentar su repertorio fácilmente, ya que puede aprender un conjuro de un pergamino si se le da el tiempo necesario.</string>
+
+    <string name="monje_id">monje</string>
+    <string name="monje_name">Monje</string>
+    <string name="monje_desc">Clase no-mágica con mucha movilidad y daño a corta distancia.</string>
+    <string name="monje_long_desc">Los monjes son criaturas que han dedicado el mayor tiempo de su vida a manejar su energía interior, el "Ki", para hacer proezas extraordinarias. Son capaces de caminar sobre el agua, sobre las paredes o de dar puñetazos a velocidades fulminantes.\nSon personajes con una gran capacidad de movimiento, que aumenta según su nivel, y que pueden dar varios golpes en un mismo turno. Son unos increíbles personajes dedicados al daño masivo y con una gran agilidad.</string>
+
+    <string name="paladin_id">paladin</string>
+    <string name="paladin_name">Paladín</string>
+    <string name="paladin_desc">Clase mágica con alta CA y daño a corta distancia, relacionada con los dioses.</string>
+    <string name="paladin_long_desc">Los paladines son caballeros devotos de alguna deidad. Sirven a esa deidad y le rinden culto a un pacto, el cual no pueden incumplir. En caso de hacerlo, serán castigados y les serán revocadas sus habilidades mágicas.\nTienen muchísimas capacidades físicas y mágicas a corta distancia, ya que aguantan muchos golpes, pueden embrazar escudos y tienen el "Castigo divino" como conjuro.</string>
+
+    <string name="picaro_id">picaro</string>
+    <string name="picaro_name">Pícaro</string>
+    <string name="picaro_desc">Clase no-mágica con facilidad para diferentes situaciones y enfocada al daño masivo.</string>
+    <string name="picaro_long_desc">Los pícaros son personas destinadas a crueles orígenes. Muchos de ellos han tenido que ser ladrones o criminales de poca monta, con muy pocos de ellos pudiendo triunfar en la vida de una forma u otra, siempre escondiéndose en las sombras.\nLos pícaros son personajes que pueden ir tanto a distancia como cuerpo a cuerpo. Tienen pocos Puntos de Golpe, aunque es complicado acertarles y hay muchos efectos de habilidades a los que pueden reducir el daño entrante, y son unos increíbles atacantes, ya que hacen cantidades masivas de daño en un solo turno.</string>
+</resources>

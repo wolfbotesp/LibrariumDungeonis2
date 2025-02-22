@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema principal de la aplicación en modo oscuro -->
+    <style name="Theme.LibrariumDungeonis" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <!-- Para que en modo oscuro el texto se muestre en blanco -->
+        <item name="colorOnBackground">@color/black</item>
+        <!-- Fondo de ventana en modo oscuro -->
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Tema del Splash Screen en modo oscuro -->
+    <style name="Theme.LibrariumDungeonis.Splash" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_logo</item>
+    </style>
+</resources>

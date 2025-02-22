@@ -1,0 +1,83 @@
+<resources>
+    <!-- Nombre de la app -->
+    <string name="app_name">Librarium Dungeonis</string>
+
+    <!-- Menú (navbar) -->
+    <string name="menu_catalog">Catalog</string>
+    <string name="menu_favorites">Favorites</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- Ajustes -->
+    <string name="username_label">User:</string>
+    <string name="favorites_label">Favorites:</string>
+    <string name="dark_mode_label">Dark Mode</string>
+    <string name="profile1_label">Profile image 1</string>
+    <string name="profile2_label">Profile image 2</string>
+    <string name="profile3_label">Profile image 3</string>
+    <string name="log_off">Log off</string>
+
+    <!-- Mensajes emergentes de favoritos -->
+    <string name="added_to_favorites">%1$s added to Favorites</string>
+    <string name="removed_from_favorites">%1$s removed from Favorites</string>
+
+    <!-- Clases: IDs, nombres y descripciones -->
+    <string name="barbaro_id">barbaro</string>
+    <string name="barbaro_name">Barbarian</string>
+    <string name="barbaro_desc">Non-magical class with high HP and decent AC, focused on melee damage.</string>
+    <string name="barbaro_long_desc">Barbarians are characters dedicated to brute strength and extreme power.\nThey have an ability called "Rage", where they unleash their fury, gaining various bonuses and benefits. This trait is restored with each long rest, recovering all uses determined by their Barbarian level.\nThey are often seen without armor, wielding large and heavy weapons such as great axes or greatswords.</string>
+
+    <string name="bardo_id">bardo</string>
+    <string name="bardo_name">Bard</string>
+    <string name="bardo_desc">Magical class that supports allies with charm.</string>
+    <string name="bardo_long_desc">Bards are beings who have developed their social skills to an extraordinary level. They have great charisma, able to understand others with just a few words.\nAdditionally, bards cast spells using musical instruments to channel their magical energy.\nWhile they may not deal much damage, they are always ready to negotiate or, if needed, support their allies in battle.</string>
+
+    <string name="brujo_id">brujo</string>
+    <string name="brujo_name">Warlock</string>
+    <string name="brujo_desc">Magical class that deals high damage with few spells, focusing on resource management.</string>
+    <string name="brujo_long_desc">Warlocks are individuals who have made pacts with powerful entities to gain magical or supernatural abilities. These entities, known as "Patrons", also grant them unique abilities.\nThey have a vast selection of abilities to enhance their cantrips, though they have very few spell slots (typically two or three) that recharge after a short rest.\nWarlocks are fragile, but they can deal devastating damage in battle with "Eldritch Blast" or a powerful level 6 "Fireball".</string>
+
+    <string name="clerigo_id">clerigo</string>
+    <string name="clerigo_name">Cleric</string>
+    <string name="clerigo_desc">Magical class mainly focused on support, with high AC and divine connection.</string>
+    <string name="clerigo_long_desc">Clerics dedicate their lives to worshiping a deity that grants them divine powers. While they are not necessarily combat-focused, they can provide tremendous support to their allies.\nThey are generally benevolent, but this is not always the case.</string>
+
+    <string name="druida_id">druida</string>
+    <string name="druida_name">Druid</string>
+    <string name="druida_desc">Magical class capable of transforming into creatures and beasts.</string>
+    <string name="druida_long_desc">Druids feel a deep connection with nature, as well as with fauna and flora.\nThey have the ability to transform into specific creatures to adopt their traits.\nWhile they do not deal exceptional damage, they are very resilient since they do not lose their own hit points when exiting their "Wild Shape".</string>
+
+    <string name="explorador_id">explorador</string>
+    <string name="explorador_name">Ranger</string>
+    <string name="explorador_desc">Non-magical class related to nature knowledge.</string>
+    <string name="explorador_long_desc">Rangers are people who have lived outside civilization for a long time or have extensive survival knowledge.\nWhile not extremely resilient or powerful, they can use spells to conserve food resources or navigate difficult terrain like swamps or muddy paths.\nThey are great support in combat, using spells like "Entangle" to hinder enemy movement.</string>
+
+    <string name="guerrero_id">guerrero</string>
+    <string name="guerrero_name">Fighter</string>
+    <string name="guerrero_desc">Non-magical class focused on high damage and ally support.</string>
+    <string name="guerrero_long_desc">Fighters are warriors who have spent their lives training. They can be strong, dexterous, or highly skilled in melee and ranged combat.\nThey have high Armor Class thanks to their armor options and a solid pool of Hit Dice.\nThey can play many roles: tank, damage dealer, or support, thanks to their maneuvers and abilities.</string>
+
+    <string name="hechicero_id">hechicero</string>
+    <string name="hechicero_name">Sorcerer</string>
+    <string name="hechicero_desc">Very versatile magical class that can modify spells with its abilities.</string>
+    <string name="hechicero_long_desc">Sorcerers are magic users who inherit their power through their lineage. Their mastery of magic is so natural that they can shape spells as if they were an extension of themselves.\nThey can provide support or deal great damage, though they lack resilience. They also have "Sorcery Points", which allow them to manipulate their magic in creative ways.</string>
+
+    <string name="mago_id">mago</string>
+    <string name="mago_name">Wizard</string>
+    <string name="mago_desc">Magical class dedicated to a school with a wide repertoire of spells.</string>
+    <string name="mago_long_desc">Wizards spend years studying to master the art of spellcasting. Unlike others, they do not receive their magic from pacts or divine intervention but through rigorous study.\nThey have access to an extensive spell repertoire, allowing them to fill various roles in combat and support. They can also expand their spellbook by learning from scrolls.</string>
+
+    <string name="monje_id">monje</string>
+    <string name="monje_name">Monk</string>
+    <string name="monje_desc">Non-magical class with high mobility and close-range damage.</string>
+    <string name="monje_long_desc">Monks dedicate their lives to mastering their inner energy, "Ki", allowing them to perform extraordinary feats. They can walk on water, run on walls, and strike with lightning speed.\nThey have exceptional movement capabilities that improve with level progression. Monks excel at dealing high burst damage and evading attacks.</string>
+
+    <string name="paladin_id">paladin</string>
+    <string name="paladin_name">Paladin</string>
+    <string name="paladin_desc">Magical class with high AC and close-range damage, tied to divine power.</string>
+    <string name="paladin_long_desc">Paladins are knights devoted to a deity. They serve their god and uphold a sacred oath that they must not break. If they do, they face severe consequences, including losing their divine powers.\nThey possess great physical and magical capabilities, can wield shields, and have powerful abilities like "Divine Smite".</string>
+
+    <string name="picaro_id">picaro</string>
+    <string name="picaro_name">Rogue</string>
+    <string name="picaro_desc">Non-magical class adept at various situations and focused on massive damage.</string>
+    <string name="picaro_long_desc">Rogues often have a criminal past, relying on stealth and cunning to survive. Few manage to rise above a life of crime, always lurking in the shadows.\nRogues can excel in both melee and ranged combat. They have low HP but are hard to hit and can avoid many harmful effects. Their "Sneak Attack" ability allows them to deal tremendous damage in a single turn.</string>
+</resources>

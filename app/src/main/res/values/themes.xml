@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema principal de la aplicación en modo claro -->
+    <style name="Theme.LibrariumDungeonis" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <!-- Para que en modo claro el texto se muestre en negro -->
+        <item name="colorOnBackground">@color/black</item>
+        <!-- Fondo de ventana en modo claro -->
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Tema del Splash Screen en modo claro -->
+    <style name="Theme.LibrariumDungeonis.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+</resources>

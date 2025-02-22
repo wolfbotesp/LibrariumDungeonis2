@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/catalogFragment"
+            android:icon="@drawable/ic_catalog"
+            android:title="Catálogo" />
+        <item
+            android:id="@+id/favoritesFragment"
+            android:icon="@drawable/ic_favorites"
+            android:title="Favoritos" />
+        <item
+            android:id="@+id/settingsFragment"
+            android:icon="@drawable/ic_settings"
+            android:title="Ajustes" />
+    </menu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
