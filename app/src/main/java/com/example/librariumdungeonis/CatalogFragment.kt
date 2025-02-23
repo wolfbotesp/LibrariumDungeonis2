@@ -108,7 +108,7 @@ class CatalogFragment : Fragment() {
                 nameRes = R.string.picaro_name,
                 descRes = R.string.picaro_desc,
                 longDescRes = R.string.picaro_long_desc,
-                imageResId = R.drawable.picaro_icc
+                imageResId = R.drawable.picaro_ic2
             )
         )
 

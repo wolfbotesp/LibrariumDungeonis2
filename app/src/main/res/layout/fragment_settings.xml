@@ -1,87 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
     android:background="?android:windowBackground">
 
-    <!-- Nombre de usuario -->
-    <TextView
-        android:id="@+id/userNameTextView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Usuario: Aventurero"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="?attr/colorOnBackground"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:orientation="vertical">
 
-    <!-- Lista de favoritos -->
-    <TextView
-        android:id="@+id/favoritesTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Favoritos: Sin favoritos"
-        android:textSize="16sp"
-        android:textColor="?attr/colorOnBackground"
-        app:layout_constraintTop_toBottomOf="@id/userNameTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="8dp" />
-
-    <!-- Imagen de perfil -->
-    <ImageView
-        android:id="@+id/profileImageView"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:contentDescription="Imagen de perfil"
-        android:scaleType="centerCrop"
-        app:layout_constraintTop_toBottomOf="@id/favoritesTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp" />
-
-    <!-- RadioGroup para elegir imagen de perfil -->
-    <RadioGroup
-        android:id="@+id/profileRadioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/profileImageView"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp">
-
-        <RadioButton
-            android:id="@+id/radioPerfil1"
+        <!-- Nombre de usuario -->
+        <TextView
+            android:id="@+id/userNameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Perfil 1"
+            android:text="@string/username_label"
+            android:textSize="18sp"
+            android:textStyle="bold"
             android:textColor="?attr/colorOnBackground" />
 
-        <RadioButton
-            android:id="@+id/radioPerfil2"
+        <!-- Lista de favoritos -->
+        <TextView
+            android:id="@+id/favoritesTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Perfil 2"
-            android:textColor="?attr/colorOnBackground" />
+            android:text="@string/favorites_label"
+            android:textSize="16sp"
+            android:textColor="?attr/colorOnBackground"
+            android:layout_marginTop="8dp" />
 
-        <RadioButton
-            android:id="@+id/radioPerfil3"
+        <!-- Imagen de perfil -->
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="Imagen de perfil"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="16dp" />
+
+        <!-- RadioGroup para elegir imagen de perfil -->
+        <RadioGroup
+            android:id="@+id/profileRadioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Perfil 3"
-            android:textColor="?attr/colorOnBackground" />
-    </RadioGroup>
+            android:layout_marginTop="16dp">
 
-    <!-- Switch para activar modo oscuro -->
-    <Switch
-        android:id="@+id/switchTheme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Modo Oscuro"
-        android:textColor="?attr/colorOnBackground"
-        app:layout_constraintTop_toBottomOf="@id/profileRadioGroup"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp" />
+            <RadioButton
+                android:id="@+id/radioPerfil1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile1_label"
+                android:textColor="?attr/colorOnBackground" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <RadioButton
+                android:id="@+id/radioPerfil2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile2_label"
+                android:textColor="?attr/colorOnBackground" />
+
+            <RadioButton
+                android:id="@+id/radioPerfil3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile3_label"
+                android:textColor="?attr/colorOnBackground" />
+        </RadioGroup>
+
+        <!-- Switch para activar modo oscuro -->
+        <Switch
+            android:id="@+id/switchTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dark_mode_label"
+            android:textColor="?attr/colorOnBackground"
+            android:layout_marginTop="16dp" />
+
+        <!-- Botón para cerrar sesión -->
+        <Button
+            android:id="@+id/logOffButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_off"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

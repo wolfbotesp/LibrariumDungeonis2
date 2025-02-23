@@ -72,6 +72,14 @@
         android:id="@+id/settingsFragment"
         android:name="com.example.librariumdungeonis.ui.settings.SettingsFragment"
         android:label="Ajustes"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_settings">
+        <!-- Acción para ir a LoginFragment al cerrar sesión -->
+        <action
+            android:id="@+id/action_settingsFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
 
 </navigation>

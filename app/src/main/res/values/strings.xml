@@ -11,6 +11,10 @@
     <string name="username_label">Usuario:</string>
     <string name="favorites_label">Favoritos:</string>
     <string name="dark_mode_label">Modo Oscuro</string>
+    <string name="profile1_label">Imagen de perfil 1</string>
+    <string name="profile2_label">Imagen de perfil 2</string>
+    <string name="profile3_label">Imagen de perfil 3</string>
+    <string name="log_off">Cerrar sesión</string>
 
     <!-- Mensajes emergentes de favoritos -->
     <string name="added_to_favorites">%1$s añadido a Favoritos</string>

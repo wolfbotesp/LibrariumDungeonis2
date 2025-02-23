@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.RadioButton
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.librariumdungeonis.R
 import com.example.librariumdungeonis.databinding.FragmentSettingsBinding
 import com.google.gson.Gson
@@ -19,9 +20,9 @@ class SettingsFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val profileMap = mapOf(
-        "perfil1" to R.drawable.perfil1,
-        "perfil2" to R.drawable.perfil2,
-        "perfil3" to R.drawable.perfil3
+        "profile1" to R.drawable.perfil1,
+        "profile2" to R.drawable.perfil2,
+        "profile3" to R.drawable.perfil3
     )
 
     override fun onCreateView(
@@ -37,20 +38,20 @@ class SettingsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val spSettings = requireContext().getSharedPreferences("Settings", Context.MODE_PRIVATE)
-        val username = spSettings.getString("username", "Aventurero")
+        val username = spSettings.getString("username", null) ?: ""
 
-        // "Usuario: X" -> localizamos "Usuario:" con R.string.username_label
+        // Etiqueta para el nombre de usuario
         val userLabel = getString(R.string.username_label)
         binding.userNameTextView.text = "$userLabel $username"
 
-        // Leer favoritos guardados
+        // Leer favoritos
         val spFavorites = requireContext().getSharedPreferences("Favorites", Context.MODE_PRIVATE)
         val gson = Gson()
         val json = spFavorites.getString("favorites", null)
         val type = object : TypeToken<List<String>>() {}.type
         val favoriteIds: List<String> = gson.fromJson(json, type) ?: emptyList()
 
-        // "Favoritos: ..." -> localizamos "Favoritos:" con R.string.favorites_label
+        // Mostrar favoritos
         val favLabel = getString(R.string.favorites_label)
         if (favoriteIds.isEmpty()) {
             binding.favoritesTextView.text = "$favLabel Sin favoritos"
@@ -59,22 +60,22 @@ class SettingsFragment : Fragment() {
         }
 
         // Imagen de perfil
-        val currentProfile = spSettings.getString("profileImage", "perfil1")
-        updateProfileImage(currentProfile ?: "perfil1")
+        val currentProfile = spSettings.getString("profileImage", null) ?: "profile1"
+        updateProfileImage(currentProfile)
 
         when (currentProfile) {
-            "perfil1" -> binding.radioPerfil1.isChecked = true
-            "perfil2" -> binding.radioPerfil2.isChecked = true
-            "perfil3" -> binding.radioPerfil3.isChecked = true
+            "profile1" -> binding.radioPerfil1.isChecked = true
+            "profile2" -> binding.radioPerfil2.isChecked = true
+            "profile3" -> binding.radioPerfil3.isChecked = true
         }
 
         binding.profileRadioGroup.setOnCheckedChangeListener { group, checkedId ->
             val selectedRadio = group.findViewById<RadioButton>(checkedId)
             val selectedProfileKey = when (selectedRadio) {
-                binding.radioPerfil1 -> "perfil1"
-                binding.radioPerfil2 -> "perfil2"
-                binding.radioPerfil3 -> "perfil3"
-                else -> "perfil1"
+                binding.radioPerfil1 -> "profile1"
+                binding.radioPerfil2 -> "profile2"
+                binding.radioPerfil3 -> "profile3"
+                else -> "profile1"
             }
             spSettings.edit().putString("profileImage", selectedProfileKey).apply()
             updateProfileImage(selectedProfileKey)
@@ -95,6 +96,16 @@ class SettingsFragment : Fragment() {
             } else {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             }
+        }
+
+        // Botón "Cerrar sesión" -> Navegar a LoginFragment
+        binding.logOffButton.setOnClickListener {
+            // Limpiar SharedPreferences
+            spSettings.edit().clear().apply()
+
+            // Navegar usando las acciones generadas por Safe Args (o findNavController())
+            val action = SettingsFragmentDirections.actionSettingsFragmentToLoginFragment()
+            findNavController().navigate(action)
         }
     }
 
